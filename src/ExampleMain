@@ -1,0 +1,28 @@
+Person person1 = new Person("Daniel", "Bersuch");
+		Person person2 = new Person("Richard", "Gross");
+		
+		Bank bank1 = new Bank(person1);
+		Bank bank2 = new Bank(person2);
+		
+		//person1
+		bank1.setIBAN(123);
+		bank1.setMoney(10.0);
+		System.out.println(bank1.getAmount());
+		
+		//person2
+		bank2.setIBAN(456);
+		bank2.setMoney(20.0);
+		System.out.println(bank2.getAmount());
+		
+		bank1.moneyTransfer(bank2, 456, 5.0);
+		//bank2.moneyTransfer(bank1, 123, 5.0);
+
+		System.out.println(bank1.getAmount());
+		System.out.println(bank2.getAmount());
+		
+		bank1.deleteAccount();	
+		System.out.println(bank1.getAmount());
+		bank1 = null;
+		if(bank1 == null) {
+			System.out.println("Account wurde gelöscht oder existiert nicht");
+		}	
