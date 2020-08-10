@@ -7,11 +7,8 @@ public class Bank {
 	private int iban;
 	private Person person;
 	
-	public Bank(double amount) {
+	public Bank(Person person, double amount) {
 		this.amount = amount;
-	}
-	
-	public Bank(Person person) {
 		this.person = person;
 	}
 	
