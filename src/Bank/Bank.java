@@ -32,6 +32,10 @@ public class Bank {
 		amount -= money;
 	}
 	
+	public void getName() {
+		System.out.println(this.person.getName());
+	}
+	
 	public boolean moneyTransfer(Bank receiver, int iban, double money) {
 		double pufferReceiver = money;
 		double pufferSender = this.amount;
