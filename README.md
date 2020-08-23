@@ -1,1 +1,2 @@
-This Repository is a Bank Account Project and is/will be build from scratch. It is only to be more Experienced and familiar with Java. 
+This Repository is a Bank Account Project where a (given) User can deposit/withdraw/transfer money from his Bank Account. This Project Overall is only serving to be more experienced in Java.
+
